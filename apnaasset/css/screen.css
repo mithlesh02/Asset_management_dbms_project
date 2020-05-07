@@ -3,7 +3,7 @@
 html, body{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     /*font-family:'Open Sans', sans-serif;*/
-    background: url(../images/bg.jpg);
+    /*background: url(../images/1.jpg);*/
     font-size: 14px;
     font-weight: 300;
     color: #555;
@@ -99,7 +99,7 @@ header #title {
 
 div.right{
     position: absolute;
-    width: 40%;top: 130px;left: 60%;
+    width: 40%;top: 130px;left: 40%;
 }
 div.right h1{
     line-height: 1em;
@@ -118,14 +118,14 @@ nav form{
     margin:0;
 }
 
-div.left{
+/*div.left{
     position: absolute;
-    width: 40%;top: 130px;left: 10%;
+    width: 0%;top: 130px;left: 10%;
 }
 
 .left img{
     width: 100%;
-}
+}*/
 
 .right form{
     position: relative;   
