@@ -91,6 +91,7 @@ if(logged_in() === false){
 
 
 
+
                     'name' => $_POST['name'],
 	                'department' => $_POST['department'],
 	                'location' => $_POST['location'],
@@ -147,7 +148,7 @@ if(logged_in() === false){
                         <td id='label-col'>
                             <label>Isperishable*</label> </td>
                         <td id='input-col'>
-                            <input type='text' name='perishable' required maxlength=30 > </td>
+                            <input type='text' name='perishable' placeholder="type yes or no" required maxlength=30 > </td>
                     </tr>
 
                     <tr>
@@ -157,20 +158,10 @@ if(logged_in() === false){
                             <input type='text' name='degradingrate' > </td>
                     </tr>
 
+                    
 
 
-
-                    <!-- <tr>
-                        <td id='label-col'>
-                            <label>Category*</label></td>
-                        <td id='input-col'>
-                            <select name='category'>
-                                <option value='chair'>Chair</option>
-                                <option value='desk'>Desk</option>
-                                <option value='cupboad'>Cupboard</option>
-                                <option value='machinery and equipment'>machinery and equipment</option>
-                            </select>
-                    </tr> -->
+                    
                     <tr>
                         <td id='label-col'>
                             <label>Quantity*</label></td>
@@ -185,13 +176,13 @@ if(logged_in() === false){
                     </tr>
 
 
-
                     <tr>
                         <td id='label-col'>
                             <label>Description</label> </td>
                         <td id='input-col'>
-                            <textarea name='details' rows='10' ></textarea> </td>
-                    </tr>    
+                            <textarea name='description' rows='10' ></textarea> </td>
+                    </tr> 
+                       
 
                     <tr>
                         <td id='label-col'>

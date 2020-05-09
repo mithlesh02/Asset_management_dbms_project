@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2020 at 02:26 PM
+-- Generation Time: May 08, 2020 at 08:27 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.3.14
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `user1`
+-- Database: `user`
 --
 
 -- --------------------------------------------------------
@@ -48,8 +48,11 @@ CREATE TABLE `uassets` (
 --
 
 INSERT INTO `uassets` (`id`, `userid`, `department`, `name`, `location`, `perishable`, `price`, `quantity`, `degradingrate`, `description`, `vendorname`, `purchasedate`) VALUES
-(2, 21, 'cse', 'laptop', 'cslab', 'no', 45, 2, 0, 'this is a good machine', 'hp', '2020-04-27'),
-(3, 21, 'me', 'system', 'melab', 'no', 45, 3, 0, 'nice product', 'dell', '2020-04-27');
+(2, 21, 'cse', 'lok', 'kahinbhi', 'no', 45, 2, 0, 'this is a good object', 'hp', '2020-04-27'),
+(9, 21, 'cse', 'gym__', 'here', 'no', 10, 5, 0, '', 'dell', '2020-04-27'),
+(10, 21, 'me', 'dummy', 'tirupati', 'yes', 4, 4, 50, '', 'android', '2020-04-27'),
+(11, 21, 'ee', 'one More', 'eelab', 'no', 4, 4, 40, '', 'herowala', '2020-04-27'),
+(12, 21, 'civil', 'one More', 'yerpedu', 'no', 1000, 10, 0, 'cement', 'jk', '2020-04-27');
 
 -- --------------------------------------------------------
 
@@ -96,7 +99,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `uassets`
 --
 ALTER TABLE `uassets`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `users`

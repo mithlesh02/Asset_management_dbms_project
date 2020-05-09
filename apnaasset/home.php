@@ -47,7 +47,9 @@ if(logged_in() === false){
 
         <div class="content-center">
             <div id="topic">Current Assets</div>
-            <a href="add.php"><div id="add-new">Add new asset</div></a>
+            <a href="add.php"><div id="add-new" >Add new asset</div></a>
+            <a href="search.php"><div id="add-new" >Search asset</div></a>
+            
             <table border=0>
             <tr>
                 <th>Name</th>

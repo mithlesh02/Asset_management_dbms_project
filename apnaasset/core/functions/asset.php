@@ -32,6 +32,44 @@ function getAssets($con, $userid) {
     return $con->query($sql);
 }
 
+function giveAssetsbylocation($con, $location,$userid) {
+
+    $location = '"' . $location . '"';
+
+    $sql = "SELECT * FROM uassets WHERE userid=$userid and location=$location";
+    $res = mysqli_query($con,$sql);
+    return $con->query($sql);
+}
+
+function giveAssetsbyvendorname($con, $vendorname,$userid) {
+
+    
+
+    $vendorname = '"' . $vendorname . '"';
+
+    $sql = "SELECT * FROM uassets WHERE userid=$userid and vendorname=$vendorname";
+    $res = mysqli_query($con,$sql);
+    return $con->query($sql);
+}
+
+function giveAssetsbyperishable($con, $perishable,$userid) {
+
+    $perishable = '"' . $perishable . '"';
+
+    $sql = "SELECT * FROM uassets WHERE userid=$userid and perishable=$perishable";
+    $res = mysqli_query($con,$sql);
+    return $con->query($sql);
+}
+
+function giveAssetsbydepartment($con, $department,$userid) {
+
+    $department = '"' . $department . '"';
+
+    $sql = "SELECT * FROM uassets WHERE userid=$userid and department=$department";
+    $res = mysqli_query($con,$sql);
+    return $con->query($sql);
+}
+
 function output_errors($errors) {
     return '<ul style="list-style:none;"><li>'. implode('</li><li>',$errors) . '</li></ul>';
 }
